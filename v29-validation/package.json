@@ -1,0 +1,11 @@
+{
+  "name": "v29-validation-sca",
+  "version": "1.0.0",
+  "description": "SCA trigger — known-vulnerable deps",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "minimist": "0.0.8",
+    "handlebars": "4.0.5",
+    "marked": "0.3.6"
+  }
+}
