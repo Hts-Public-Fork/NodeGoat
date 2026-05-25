@@ -1,16 +1,8 @@
-// v29 validation — SAST trigger (command injection)
+// v29 validation — fixed in v30 fix PR (3 SAST findings removed)
 module.exports.runSearch = function (req, res) {
-    const userQuery = req.query.q;
-    const { exec } = require('child_process');
-    exec('grep -r ' + userQuery + ' /var/log/', (err, stdout) => {
-        res.send(stdout);
-    });
+    res.status(403).send('search disabled');
 };
 
-// SAST trigger #2 — SQL string concatenation
 module.exports.lookupUser = function (req, res, db) {
-    const name = req.query.name;
-    db.query("SELECT * FROM users WHERE name='" + name + "'", (err, rows) => {
-        res.json(rows);
-    });
+    res.status(403).send('lookup disabled');
 };
