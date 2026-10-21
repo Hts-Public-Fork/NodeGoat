@@ -1,11 +1,11 @@
 {
   "name": "v29-validation-sca",
   "version": "1.0.0",
-  "description": "SCA trigger — known-vulnerable deps",
+  "description": "SCA — partially fixed in v30 fix PR (3 of 4 deps bumped)",
   "dependencies": {
-    "lodash": "4.17.4",
-    "minimist": "0.0.8",
-    "handlebars": "4.0.5",
+    "lodash": "4.17.21",
+    "minimist": "1.2.8",
+    "handlebars": "4.7.8",
     "marked": "0.3.6"
   }
 }
